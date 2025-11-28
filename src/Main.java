@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Supermarket supermarket;
-        Customer customer;
-        Scanner scanner;
+        SuperMarket supermarket;
+        Customer customer = null;
+        Scanner scanner = null;
 
         Product bread = new Product("bread", 3.5, 6);
         Product fruit = new Product("fruit", 3.4, 22);
@@ -12,8 +12,6 @@ public class Main {
         Product cheese = new Product("cheese", 1.75, 13);
 
         SuperMarket superMarket = new SuperMarket(bread, fruit, toiletPaper, cheese);
-
-        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Which product do you want to buy?");
         String productName = scanner.nextLine();

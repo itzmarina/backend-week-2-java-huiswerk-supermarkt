@@ -27,14 +27,14 @@ public class SuperMarket{
     }
 
     public void buyFruit(int amount){
-        buyItem(this.fruit, amount)
+        buyItem(this.fruit, amount);
     }
 
     public void buyCheese(int amount){
-        buyItem(this.cheese, amount)
+        buyItem(this.cheese, amount);
     }
 
     public void buyToiletPaper(int amount){
-        buyItem(this.toiletPaper, amount)
+        buyItem(this.toiletPaper, amount);
     }
 }
