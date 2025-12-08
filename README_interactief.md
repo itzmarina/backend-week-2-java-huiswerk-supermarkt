@@ -162,7 +162,7 @@ In de `switch` in `main`, staan 2 keer (bijna) dezelfde regels code om een super
 Als goede programmeurs houden we er niet van om code te moeten herhalen. Wanneer je herhaling ziet, dan probeer je dat in een helper-methode te extraheren.  
 Probeer dat ook voor deze regels code te doen.  
 Zet het in een helper-methode en roep die methode op deze 2 plekken aan. Je code ziet er dan een stuk schoner uit.
-Let daar bij op de subtiele verschillen tussen de twee varianten.  
+Let daar bij op de subtiele verschillen tussen de twee varianten..  
 
 > Tip: In plaats van `.get`, kun je `.getOrDefault` gebruiken om een item uit een Map te halen. Wanneer je dan een key gebruikt die niet bestaat, kun je een default value kiezen om terug te geven in plaats van null
 
