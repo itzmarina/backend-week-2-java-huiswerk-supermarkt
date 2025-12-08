@@ -13,7 +13,7 @@ public class SuperMarket{
 
     public SuperMarket(String name, List<Product> products){
         if (products == null) {
-            products = new ArrayList<>(); // maak een lege lijst
+            products = new ArrayList<>();
         }
 
         this.name = name;

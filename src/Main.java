@@ -28,7 +28,7 @@ public class Main {
         SuperMarkets.put(2, "Jumbo");
         SuperMarkets.put(3, "Lidl");
 
-//      ----   Opdracht Supermarket (niet interactief)   ---
+//      ----   Opdracht Supermarket (niet interactief)   ----
 
 //        Product bread = new Product("bread", 3.5, 6);
 //        Product fruit = new Product("fruit", 3.4, 22);
