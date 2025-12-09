@@ -11,16 +11,19 @@ public class Customer{
     }
 
     public void buyItem(String productName, int amount){
-        if(productName.equals("bread")) {
-            superMarket.buyBread(amount);
-        } else if (productName.equals("fruit")) {
-            superMarket.buyFruit(amount);
-        } else if (productName.equals("toiletPaper")) {
-            superMarket.buyToiletPaper(amount);
-        } else if (productName.equals("cheese")) {
-            superMarket.buyCheese(amount);
-        } else {
-            System.out.println("Enter a valid product name");
+        if(superMarket == null){
+            System.out.println("choose a supermarket");
+            return;
         }
+
+        for(int i = 0; i < superMarket.products.size(); i++) {
+            Product product = superMarket.products.get(i);
+
+            if (product.name.equalsIgnoreCase(productName)) {
+                superMarket.buyItem(product, amount);
+                return;
+            }
+        }
+        System.out.println(superMarket.name + "does not sell" + productName);
     }
 }

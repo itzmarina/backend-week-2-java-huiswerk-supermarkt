@@ -2,11 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SuperMarket{
-//    Product bread;
-//    Product fruit;
-//    Product toiletPaper;
-//    Product cheese;
-
     List<Product> products;
     String name;
 
@@ -18,12 +13,6 @@ public class SuperMarket{
 
         this.name = name;
         this.products = products;
-
-
-//        this.bread = bread;
-//        this.fruit = fruit;
-//        this.toiletPaper = toiletPaper;
-//        this.cheese = cheese;
     }
 
     public void buyItem(Product product, int amount) {
@@ -37,19 +26,15 @@ public class SuperMarket{
         }
     }
 
-    public void buyBread(int amount){
-        buyItem(this.bread, amount);
-    }
+    public void restockItem(String productName, int amount){
+        for(int i = 0; i < products.size(); i++){
+            Product product = products.get(i);
 
-    public void buyFruit(int amount){
-        buyItem(this.fruit, amount);
-    }
-
-    public void buyCheese(int amount){
-        buyItem(this.cheese, amount);
-    }
-
-    public void buyToiletPaper(int amount){
-        buyItem(this.toiletPaper, amount);
+            if(product.name.equalsIgnoreCase(productName)){
+                product.amount += amount;
+                return;
+            }
+        }
+        System.out.println(productName + "cannot restock or does not exist");
     }
 }
