@@ -35,6 +35,6 @@ public class SuperMarket{
                 return;
             }
         }
-        System.out.println(productName + "cannot restock or does not exist");
+        System.out.println(productName + " cannot restock or does not exist");
     }
 }

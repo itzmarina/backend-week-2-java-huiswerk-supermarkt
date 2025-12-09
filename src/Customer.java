@@ -24,6 +24,6 @@ public class Customer{
                 return;
             }
         }
-        System.out.println(superMarket.name + "does not sell" + productName);
+        System.out.println(superMarket.name + " does not sell " + productName);
     }
 }
