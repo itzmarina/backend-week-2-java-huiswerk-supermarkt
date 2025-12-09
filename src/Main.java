@@ -3,30 +3,28 @@ import java.util.*;
 public class Main {
     public static void main(String[] args){
 
-        List<Product> products1 = new ArrayList<>();
+        List<Product> productsHalbertEijn = new ArrayList<>();
         products1.add(new Product("bread", 3.5, 6));
         products1.add(new Product("fruit", 3.4, 22));
         products1.add(new Product("toiletPaper", 8.89, 10));
         products1.add(new Product("cheese", 1.75, 13));
 
-        List<Product> products2 = new ArrayList<>();
+        List<Product> productsDumbo = new ArrayList<>();
         products2.add(new Product("bread", 3.5, 6));
         products2.add(new Product("fruit", 3.4, 22));
         products2.add(new Product("toiletPaper", 8.89, 10));
         products2.add(new Product("cheese", 1.75, 13));
 
-        List<Product> products3 = new ArrayList<>();
+        List<Product> productsCaldi = new ArrayList<>();
         products3.add(new Product("bread", 3.5, 6));
         products3.add(new Product("fruit", 3.4, 22));
         products3.add(new Product("toiletPaper", 8.89, 10));
         products3.add(new Product("cheese", 1.75, 13));
 
-
-
-        Map<Integer, String> SuperMarkets = new HashMap<>();
-        SuperMarkets.put(1, "Albert Heijn");
-        SuperMarkets.put(2, "Jumbo");
-        SuperMarkets.put(3, "Lidl");
+        Map<String, SuperMarket> SuperMarkets = new HashMap<>();
+            new SuperMarket("Halbert Eijn", productsHalbertEijn);
+            new SuperMarket("Dumbo", productsDumbo);
+            new SuperMarket("Caldi", productsCaldi);
 
 //      ----   Opdracht Supermarket (niet interactief)   ----
 
